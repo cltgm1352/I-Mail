@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>i Mail</title>
+  <link rel="icon" type="image/png" href="i mail-logo背景なし.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ローディング画面 -->
+  <div id="loading-screen">
+    <div class="loading-logo">
+      <img src="i mail-logo背景なし.png" alt="i Mail ロゴ" />
+      <p>i Mail を読み込んでいます...</p>
+    </div>
+  </div>
+
+  <!-- メイン画面 -->
+  <div id="main-content" style="display: none;">
+    <header>
+      <img src="i Mailから新たなメッセージ が届きました.png" alt="新着メッセージ通知" class="notification" />
+    </header>
+
+    <section class="email">
+      <div class="email-header">
+        <p><strong>差出人：</strong>info@hamazon.jp.nise.com</p>
+        <p><strong>件名：</strong>Hamazon primeをご利用いただきありがとうございます</p>
+      </div>
+      <div class="email-body">
+        Hamazon primeの会費のお支払いにご指定いただいたお客、様のお支払い方法が承認されないため<br/>
+        Hamazon primeの会費(税込1100円)をご請求できませんでした。<br/><br/>
+        現在、プライム会員の特典はご利用いただけません。<br/>
+        <strong>3日以内にお支払い方法を更新いただけない場合は法的措置を適用いたします。</strong><br/><br/>
+        ▶︎ <a href="#" id="fake-link">今すぐお支払い方法を更新</a><br/>
+        <span class="fake-url">https://hamazon.co.jp-nisehonnmonodesuyo</span>
+      </div>
+    </section>
+  </div>
+
+  <!-- 警告画面 -->
+  <div id="alert-screen" style="display: none;">
+    <div class="alert-box">
+      <h1 class="warning">注意</h1>
+      <p class="message">
+        このようなメールが届いたら、<strong>リンクをクリックしないでください。</strong><br/>
+        また、「法的措置」などという言葉を使ってリンクをクリックするように焦らせてきます。
+      </p>
+      <div class="spacer"></div>
+      <p class="disclaimer">
+        このメールなどは、全てフィクションです。<br/>
+        実際に存在するものではありません。このサイトも安全です。
+      </p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
