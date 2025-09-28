@@ -1,0 +1,113 @@
+/* 共通 */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f5f5;
+}
+
+/* ローディング */
+#loading-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #ffffff;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.loading-logo img {
+  width: 80px;
+  height: 80px;
+  opacity: 0.8;
+}
+
+.loading-logo p {
+  font-size: 18px;
+  color: #666;
+}
+
+/* メイン画面 */
+#main-content {
+  padding: 30px;
+}
+
+header {
+  text-align: right;
+}
+
+.notification {
+  width: 300px;
+}
+
+/* メール */
+.email {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-top: 20px;
+  max-width: 700px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.email-header p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.email-body {
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.email-body a {
+  color: #1a73e8;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.fake-url {
+  display: block;
+  color: #888;
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+/* 警告画面 */
+#alert-screen {
+  background-color: #111;
+  color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.alert-box {
+  max-width: 600px;
+}
+
+.alert-box .warning {
+  color: red;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.alert-box .message {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
+
+.alert-box .spacer {
+  height: 80px;
+}
+
+.alert-box .disclaimer {
+  font-size: 14px;
+  color: #ccc;
+}
